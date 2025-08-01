@@ -11,3 +11,12 @@ Before the flight took off:
 - Bob’s luggage went missing.
 - The staff prepared a daily report before resetting for the next flight.
 """
+
+
+luggage = [("Alice", 23),( "Bob", 18), ("Charlie", 25)]
+luggage = dict(luggage)
+luggage["Daisy"] = "20"
+missing = {"Bob": "18"}
+print(f"The flight records are:", luggage)
+print(f"The missing pieces of luggage are:", missing)
+

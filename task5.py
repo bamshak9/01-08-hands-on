@@ -18,10 +18,30 @@ At checkout:
 - The store takes a snapshot of the final order as an order summary for records.
 - The shared cart is then emptied to prepare it for the next customer.
 """
-
-
 # print(godiya)
 # print(daniella)
 # print(godiya == daniella) # should return true
 # print(summary_of_cart)
 # print(cart)
+
+cart = {}
+godiya = cart
+daniella = cart
+
+
+daniella["shoes"] = 2
+godiya["watch"] = 1
+print(godiya)
+print(daniella)
+daniella.pop("shoes")
+godiya["bag"] = 1
+godiya.pop("bag")
+print(godiya)
+print(daniella)
+print(cart)
+print(godiya == daniella)
+summary_of_cart = list(cart)
+print(summary_of_cart)
+cart.clear()
+print(cart)
+

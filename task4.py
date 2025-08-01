@@ -12,3 +12,12 @@ During the first day:
 
 # print(participants_snapshot)
 # print(participants)
+
+participants = {"VIP": "Alice", "Regular": "Bob", "Student": "Charlie"}
+participants["Guest"] = "Daisy"
+participants.pop("Student")
+pre_record = participants.copy()
+participants.popitem()
+print(f"The record for the day is: ",pre_record)
+print(f"The current record is:", participants)
+
